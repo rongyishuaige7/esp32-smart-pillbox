@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 智能药盒源码推导接线边界图</title>
+  <desc id="desc">展示 ESP32 与两个 PIR、两个 HX711、蜂鸣器、RGB 和可选 OLED 的源码接口。不是原理图、PCB 或已复测实物接线。</desc>
+  <style>
+    .bg{fill:#f8fafc}.box{fill:#ffffff;stroke:#0f766e;stroke-width:2}.sub{fill:#ecfeff;stroke:#0f766e;stroke-width:2}.line{stroke:#0f766e;stroke-width:2;fill:none}.t{font:600 24px sans-serif;fill:#0f172a}.s{font:18px sans-serif;fill:#334155}.note{font:16px sans-serif;fill:#7c2d12}
+  </style>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="t" x="60" y="54">ESP32 智能药盒：源码推导接口边界</text>
+  <text class="note" x="60" y="84">非原理图、非 PCB、非当前实物复测记录；接线前必须核对电压、电流、模块型号、共地与实际引脚。</text>
+  <rect class="box" x="445" y="230" width="310" height="220" rx="18"/>
+  <text class="t" x="540" y="285">ESP32</text>
+  <text class="s" x="490" y="325">PlatformIO: esp32dev</text>
+  <text class="s" x="490" y="360">Wi-Fi AP / STA + HTTP</text>
+  <text class="s" x="490" y="395">SPIFFS 状态与计划存储</text>
+  <rect class="sub" x="60" y="155" width="270" height="110" rx="14"/><text class="t" x="115" y="200">PIR × 2</text><text class="s" x="88" y="235">药仓 1: GPIO15 · 药仓 2: GPIO25</text>
+  <rect class="sub" x="60" y="385" width="270" height="110" rx="14"/><text class="t" x="100" y="430">HX711 × 2</text><text class="s" x="82" y="465">#1 DT/SCK 4/2 · #2 DT/SCK 33/32</text>
+  <rect class="sub" x="870" y="115" width="270" height="110" rx="14"/><text class="t" x="935" y="160">蜂鸣器</text><text class="s" x="925" y="195">GPIO18 · 低功率/适当驱动</text>
+  <rect class="sub" x="870" y="285" width="270" height="110" rx="14"/><text class="t" x="940" y="330">RGB LED</text><text class="s" x="910" y="365">R=13 · G=21 · B=22</text>
+  <rect class="sub" x="870" y="455" width="270" height="110" rx="14"/><text class="t" x="915" y="500">可选 OLED</text><text class="s" x="895" y="535">SDA=26 · SCL=27（主程序未启用）</text>
+  <path class="line" d="M330 210 H445"/><path class="line" d="M330 440 H445"/><path class="line" d="M755 280 H870"/><path class="line" d="M755 340 H870"/><path class="line" d="M755 410 H820 V510 H870"/>
+  <text class="note" x="60" y="635">注意：HTTP 无认证、无 TLS；PIR/HX711 阈值不等于剂量、服药或医疗判断。不要直接驱动市电、继电器、电机或大功率负载。</text>
+</svg>

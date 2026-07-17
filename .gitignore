@@ -1,0 +1,37 @@
+# PlatformIO and firmware build outputs
+.pio/
+*.bin
+*.elf
+*.map
+*.o
+*.a
+
+# Flutter and Android generated outputs
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+build/
+dist/
+.gradle/
+android/.gradle/
+android/local.properties
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+*.apk
+*.aab
+
+# IDE and machine-local state
+.vscode/
+.idea/
+*.iml
+*.pyc
+__pycache__/
+.DS_Store
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+local.properties

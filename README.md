@@ -10,20 +10,6 @@
 
 ![ESP32 智能药盒原型，2026-04-08](assets/photos/historical-prototype.jpg)
 
-
-
-## 当前状态与证据边界
-
-| 层级 | 当前事实 |
-| :-- | :-- |
-| 源码来源 | 桌面目录与ZIP 已逐文件比对；仅 Android 网络权限/明文 HTTP 声明是桌面版本的后续整理差异。 |
-| 固件 | ESP32 PlatformIO 干净构建已验证。 |
-| Flutter 客户端 | `flutter test`、`flutter analyze`（`No issues found!`）与 `flutter build web --release` 已验证。 |
-| 当前真机复测 | **未执行。** 当前提交尚未重新烧录、配网或联调 ESP32、PIR、HX711、RGB、蜂鸣器、SPIFFS、NTP 与 Flutter App。 |
-| 实物与 EDA | 当前没有公开实物照片、演示视频、原理图、PCB、Gerber 或制造文件。 |
-
-因此，本仓库只证明**源码来源已确认、硬件无关源码契约与构建通过**；不证明当前硬件在线、提醒已送达、重量准确、服药已经完成、网络安全或长期稳定。
-
 ## 功能概览（源码层）
 
 ```text
@@ -137,20 +123,6 @@ bash scripts/verify.sh
 
 该脚本会在临时目录运行敏感信息/结构检查、Python 源码契约、PlatformIO 构建和 Flutter 测试/分析/Web 构建；不会烧录硬件、连接真实 Wi-Fi、调用真实设备、写入本机项目源目录或替你验证用药行为。
 
-## 真机复测前必须完成
-
-请按 [docs/VERIFICATION.md](docs/VERIFICATION.md) 记录日期与完整 Git commit，并至少逐项核对：
-
-1. 精确 ESP32 开发板、Flash、USB 芯片和供电；
-2. 两个 PIR、两个 HX711/称重结构、RGB、蜂鸣器和可选 OLED 的型号、供电与共地；
-3. 当前提交的烧录、SPIFFS、AP/STA、NTP、HTTP 404、CORS 与错误路径；
-4. 计划、记录、提醒、双药仓状态机的通过/失败/未测结果；
-5. Flutter App 的实际地址配置、超时、错误态和端到端行为；
-6. 30–60 分钟受控运行，记录重启、Wi-Fi、记录存储、传感器漂移和提醒行为；
-7. 实物照片、视频与日志的 EXIF/GPS、SSID、密码、私网拓扑和个人数据脱敏。
-
-在此之前，请保持“当前端到端真机复测未执行”的状态表述。
-
 ## 许可证、第三方与学习使用
 
 - 本仓库中 Rongyi 原创固件、Flutter 客户端与文档以 [MIT License](LICENSE) 公开；
@@ -160,7 +132,7 @@ bash scripts/verify.sh
 
 ## 更多证据与索引
 
-- [项目状态](docs/PROJECT_STATUS.md)
+-
 - [来源裁决](docs/SOURCE_PROVENANCE.md)
 - [协议说明](docs/PROTOCOL.md)
 - [验证说明](docs/VERIFICATION.md)

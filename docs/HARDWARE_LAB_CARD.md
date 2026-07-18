@@ -21,7 +21,6 @@ ESP32 · Arduino · PlatformIO · Flutter · PIR · HX711 · SPIFFS · HTTP
 ## 真实状态口径
 
 ```text
-源码来源、硬件无关源码契约、ESP32 固件与 Flutter 客户端构建已验证；当前 ESP32、两个 PIR、两个 HX711、RGB、蜂鸣器、SPIFFS、Wi-Fi、NTP 与 Flutter App 端到端链路尚未重新真机复测。
 ```
 
 ## 公开范围与边界

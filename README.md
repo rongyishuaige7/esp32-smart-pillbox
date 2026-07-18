@@ -4,13 +4,13 @@
 
 基于 ESP32、两个 PIR、两个 HX711、蜂鸣器、RGB LED 与 Flutter 客户端的局域网智能药盒原型。它演示了：双药仓的人体接近与重量变化状态机、定时提醒、SPIFFS 本地记录、AP 配网与 Flutter 端的用药计划/记录界面。
 
-## Historical material evidence (2026-07-18 publication)
+## 历史素材证据（2026-07-18 发布）
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
-![Historical ESP32 pillbox prototype, 2026-04-08](assets/photos/historical-prototype.jpg)
+![历史 ESP32 智能药盒原型，2026-04-08](assets/photos/historical-prototype.jpg)
 
-Historical media/EDA do not prove that the current public commit was flashed or re-tested on hardware. **Current hardware re-test not run.**
+历史照片、截图或 EDA 不证明当前公开提交已烧录或完成真机复测。**当前未进行真机复测。**
 
 
 ## 当前状态与证据边界

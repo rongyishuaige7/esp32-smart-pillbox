@@ -30,8 +30,8 @@
 - 状态机阈值是 HX711 原始计数参数，未有当前实物标定、误报率、漏报率、剂量准确度、功耗、网络可靠性或长期稳定性证据；
 - 不得在完成日期化、精确 commit 绑定的真机复测前使用“系统在线”“硬件已验证”“稳定运行”“提醒可靠”“服药已确认”“医疗可用”或“生产就绪”等表述。
 
-## Historical media and EDA added on 2026-07-18
+## 2026-07-18 新增的历史素材与 EDA
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md)。
 
-This publication update adds historical evidence only. Current hardware re-test not run.
+本次发布仅新增历史证据。当前未进行真机复测。

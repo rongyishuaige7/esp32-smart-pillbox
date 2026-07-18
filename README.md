@@ -4,20 +4,19 @@
 
 基于 ESP32、两个 PIR、两个 HX711、蜂鸣器、RGB LED 与 Flutter 客户端的局域网智能药盒原型。它演示了：双药仓的人体接近与重量变化状态机、定时提醒、SPIFFS 本地记录、AP 配网与 Flutter 端的用药计划/记录界面。
 
-## 历史素材证据（2026-07-18 发布）
+## 项目照片与资料
 
-已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
+这里整理了项目照片、界面截图和相关资料；文件处理说明见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
-![历史 ESP32 智能药盒原型，2026-04-08](assets/photos/historical-prototype.jpg)
+![ESP32 智能药盒原型，2026-04-08](assets/photos/historical-prototype.jpg)
 
-历史照片、截图或 EDA 不证明当前公开提交已烧录或完成真机复测。**当前未进行真机复测。**
 
 
 ## 当前状态与证据边界
 
 | 层级 | 当前事实 |
 | :-- | :-- |
-| 源码来源 | 桌面目录与历史 ZIP 已逐文件比对；仅 Android 网络权限/明文 HTTP 声明是桌面版本的后续整理差异。 |
+| 源码来源 | 桌面目录与ZIP 已逐文件比对；仅 Android 网络权限/明文 HTTP 声明是桌面版本的后续整理差异。 |
 | 固件 | ESP32 PlatformIO 干净构建已验证。 |
 | Flutter 客户端 | `flutter test`、`flutter analyze`（`No issues found!`）与 `flutter build web --release` 已验证。 |
 | 当前真机复测 | **未执行。** 当前提交尚未重新烧录、配网或联调 ESP32、PIR、HX711、RGB、蜂鸣器、SPIFFS、NTP 与 Flutter App。 |

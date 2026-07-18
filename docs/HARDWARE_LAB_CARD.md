@@ -31,3 +31,5 @@ ESP32 · Arduino · PlatformIO · Flutter · PIR · HX711 · SPIFFS · HTTP
 ```
 
 填入 Hardware Lab 前必须将本卡的 `head_sha`、固定 Actions URL 与最终公开仓 exact HEAD 同步；未完成线上 CI 前不得写成构建证据已通过。
+
+- **历史媒体 / EDA：** 已加入经脱敏的历史衍生材料；范围和版本差异见 [`MEDIA_EVIDENCE.md`](MEDIA_EVIDENCE.md)。它们不证明当前公开提交已完成真机复测。

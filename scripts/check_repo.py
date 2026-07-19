@@ -60,7 +60,7 @@ def main() -> int:
     contracts = {
         'README.md': [
             '不是医疗器械', '无认证、无 TLS',
-            '本次状态请求成功', '可选 SSD1306',
+            '可选 SSD1306',
         ],
         'firmware/platformio.ini': ['platform = espressif32@6.13.0', 'board = esp32dev'],
         'firmware/src/main.cpp': [

@@ -28,9 +28,9 @@ PATTERNS = [
 ]
 # Provenance paths are documentation of the only audited source locations, not runtime dependencies.
 ALLOWED_EXACT_LINES = {
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/ESP32智能药盒'),
-    ('docs/SOURCE_PROVENANCE.md', '/mnt/shared/2026项目/ESP32智能药盒.zip'),
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/esp32-smart-pillbox'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/ESP32智能药盒'),
+    ('docs/SOURCE_PROVENANCE.md', 'source-archives/2026项目/ESP32智能药盒.zip'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/esp32-smart-pillbox'),
 }
 ALLOWED_SUBSTRINGS = {'YOUR_WIFI_SSID', 'YOUR_WIFI_PASSWORD', '[REDACTED]', '<YOUR_'}
 

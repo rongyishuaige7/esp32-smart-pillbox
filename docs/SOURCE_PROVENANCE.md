@@ -5,8 +5,8 @@
 ## 只读来源
 
 ```text
-/home/rongyi/桌面/ESP32智能药盒
-/mnt/shared/2026项目/ESP32智能药盒.zip
+~/桌面/ESP32智能药盒
+source-archives/2026项目/ESP32智能药盒.zip
 ```
 
 历史 ZIP SHA-256：
@@ -40,7 +40,7 @@ flutter_app/android/app/src/main/AndroidManifest.xml
 
 - 历史 ZIP：只读封存基线；
 - 桌面目录：本轮公开整理的权威源码来源；
-- 公开候选：`/home/rongyi/桌面/esp32-smart-pillbox`；
+- 公开候选：`~/桌面/esp32-smart-pillbox`；
 - 原目录和 ZIP 始终只读，不由候选仓库反向覆盖、清理或删除。
 
 ## 可审计公开整理
